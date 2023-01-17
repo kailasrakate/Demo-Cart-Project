@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-17T17:51:51 IST" name="Suite" finished-at="2023-01-17T17:54:47 IST" duration-ms="176333">
+    <groups>
+    </groups>
+    <test started-at="2023-01-17T17:51:51 IST" name="Test" finished-at="2023-01-17T17:54:47 IST" duration-ms="176333">
+      <class name="Testcases.Login_Testcases">
+        <test-method is-config="true" signature="browserlaunch()[pri:0, instance:Testcases.Login_Testcases@57cf54e1]" started-at="2023-01-17T17:52:26 IST" name="browserlaunch" finished-at="2023-01-17T17:52:45 IST" duration-ms="18783" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserlaunch -->
+        <test-method signature="Login()[pri:0, instance:Testcases.Login_Testcases@57cf54e1]" started-at="2023-01-17T17:52:45 IST" name="Login" finished-at="2023-01-17T17:52:50 IST" duration-ms="4925" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+      </class> <!-- Testcases.Login_Testcases -->
+      <class name="Testcases.Footer_testcasses">
+        <test-method is-config="true" signature="browserlaunch()[pri:0, instance:Testcases.Footer_testcasses@434a63ab]" started-at="2023-01-17T17:53:45 IST" name="browserlaunch" finished-at="2023-01-17T17:54:21 IST" duration-ms="35809" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserlaunch -->
+        <test-method signature="Footer()[pri:0, instance:Testcases.Footer_testcasses@434a63ab]" started-at="2023-01-17T17:54:21 IST" name="Footer" finished-at="2023-01-17T17:54:47 IST" duration-ms="25931" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Footer -->
+      </class> <!-- Testcases.Footer_testcasses -->
+      <class name="Testcases.AddToCartTestCases">
+        <test-method is-config="true" signature="browserlaunch()[pri:0, instance:Testcases.AddToCartTestCases@37d4349f]" started-at="2023-01-17T17:53:09 IST" name="browserlaunch" finished-at="2023-01-17T17:53:28 IST" duration-ms="19073" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserlaunch -->
+        <test-method signature="AddToCart()[pri:0, instance:Testcases.AddToCartTestCases@37d4349f]" started-at="2023-01-17T17:53:28 IST" name="AddToCart" finished-at="2023-01-17T17:53:45 IST" duration-ms="17068" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddToCart -->
+      </class> <!-- Testcases.AddToCartTestCases -->
+      <class name="Testcases.Register_page_testcases">
+        <test-method is-config="true" signature="browserlaunch()[pri:0, instance:Testcases.Register_page_testcases@5b03b9fe]" started-at="2023-01-17T17:52:50 IST" name="browserlaunch" finished-at="2023-01-17T17:53:02 IST" duration-ms="12027" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserlaunch -->
+        <test-method signature="resiter_page()[pri:0, instance:Testcases.Register_page_testcases@5b03b9fe]" started-at="2023-01-17T17:53:02 IST" name="resiter_page" finished-at="2023-01-17T17:53:09 IST" duration-ms="6996" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resiter_page -->
+      </class> <!-- Testcases.Register_page_testcases -->
+      <class name="Testcases.MainpageTestcases">
+        <test-method is-config="true" signature="browserlaunch()[pri:0, instance:Testcases.MainpageTestcases@3bf9ce3e]" started-at="2023-01-17T17:51:51 IST" name="browserlaunch" finished-at="2023-01-17T17:52:06 IST" duration-ms="15447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserlaunch -->
+        <test-method signature="mainpage()[pri:0, instance:Testcases.MainpageTestcases@3bf9ce3e]" started-at="2023-01-17T17:52:06 IST" name="mainpage" finished-at="2023-01-17T17:52:26 IST" duration-ms="20111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mainpage -->
+      </class> <!-- Testcases.MainpageTestcases -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
