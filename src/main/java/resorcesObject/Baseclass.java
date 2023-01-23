@@ -16,11 +16,11 @@ public class Baseclass {
 	
 	public void browserInitialiazation() throws IOException {
 		
-   		FileInputStream fis=new FileInputStream("C:\\Users\\Dell\\Desktop\\eclipse-workspace\\selfmaven1\\src\\main\\java\\resorcesObject\\Browser.properties");
+   		FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\resorcesObject\\Browser.properties");
 		
-		Properties prop=new Properties();
+		Properties prop=new Properties(); 
 		
-		prop.load(fis);
+		prop.load(fis); 
 		
 		String browsername=prop.getProperty("browser");
 		
@@ -43,6 +43,10 @@ public class Baseclass {
 		browserInitialiazation();
 		
 		driver.get("https://naveenautomationlabs.com/opencart/index.php?route=common/home");
+		
+		
+		
+		
 		
 	}
 	

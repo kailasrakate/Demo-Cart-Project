@@ -1,5 +1,7 @@
 package pageobjectModel;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,7 +21,11 @@ public class Footer_pageobject {
   private By Email=By.xpath("//input[@id='input-email']");
   private By telephone=By.xpath("//input[@id='input-telephone']");
   private By oredrid=By.xpath("//input[@id='input-order-id']");
-  private By calender=By.xpath("//i[@class='fa fa-calendar']");
+  private By calender1=By.xpath("//i[@class='fa fa-calendar']");
+  private By calender_monthchange_btn=By.xpath("(//th[@class='next'])[1]");
+  private By month_year_text=By.xpath("//th[@class='picker-switch']");
+  private By date_WebElments=By.xpath("//td[@class='day']");
+  private By radio_buttons=By.xpath("//input[@type='radio']");
   private By yesChekbox=By.xpath("(//input[@type='radio'])[6]");
   private By Faultyorotherdetails=By.xpath("//textarea[@name='comment']");
   private By Submit_btn=By.xpath("//input[@value='Submit']");
@@ -95,11 +101,30 @@ public class Footer_pageobject {
 		 return driver.findElement(oredrid);
 	}
 	
-	public WebElement calender() {
+	public WebElement calender1() {
 		  
-		 return driver.findElement(calender);
+		 return driver.findElement(calender1);
 	}
 	
+	public WebElement calender_monthchange_btn() {
+		  
+		 return driver.findElement(calender_monthchange_btn);
+	}
+	
+	public WebElement month_year_text() {
+		  
+		 return driver.findElement(month_year_text);
+	}
+	
+	public List<WebElement> date_WebElments() {
+		  
+		 return driver.findElements(date_WebElments);
+	}
+	
+	public List<WebElement> radio_buttons(){
+		
+		return driver.findElements(radio_buttons);
+	}
 			
 	public WebElement yesChekbox() {
 		  
@@ -162,6 +187,10 @@ public class Footer_pageobject {
 		  
 		 return driver.findElement(Click_on_Newsetter);
 	}
+	
+	
+	
+	
 	
 	
 	

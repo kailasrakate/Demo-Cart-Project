@@ -16,6 +16,9 @@ public class Constant {
 	public static String password="Bhalu@123";
 	public static String orderid="1452";
 	public static String resonforreturn="got broken product";
+	public static String select_date_and_year="April 2024";
+	public static String select_date="18";
+    
 	
 	//add to cart page hard-core data 
 	public static String iphone="iPhone";

@@ -9,7 +9,6 @@ import org.testng.asserts.SoftAssert;
  
 public class Commonmethods  {
 	
-	//public WebDriver driver;
 	
 	public static void actionMethod(WebElement Element , WebDriver driver ) {
 		
