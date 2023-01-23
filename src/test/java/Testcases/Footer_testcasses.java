@@ -4,12 +4,14 @@ import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import pageobjectModel.Footer_pageobject;
 import resorcesObject.Baseclass;
 import resorcesObject.Constant;
+
 
 public class Footer_testcasses extends Baseclass{
 	
@@ -19,7 +21,6 @@ public class Footer_testcasses extends Baseclass{
 	
 	Footer_pageobject foot=new Footer_pageobject(driver);
 	
-	
 //Information
 	foot.ClickonAboutUS().click();	
 	
@@ -28,7 +29,6 @@ public class Footer_testcasses extends Baseclass{
 	foot.clickonPrivacyPolicy().click();
 	
 	foot.clickonTermsandConditions().click();
-	
 	
 //Customer Service
 	foot.clickonContactUs().click();
@@ -45,43 +45,41 @@ public class Footer_testcasses extends Baseclass{
 	
 	foot.oredrid().sendKeys(Constant.orderid);
 	
-	foot.calender().click();
+	foot.calender1().click();
 	
-	/*
-	String month="";
-	
-	while (!month.equals("January 2024"))	{
+	    String month="";
+			
+		while (!(month.equals(Constant.select_date_and_year)))	{
 		
-		driver.findElement(By.xpath("(//th[@class='next'])[1]")).click();
+			foot.calender_monthchange_btn().click();
+			
+		    foot.month_year_text();
+		 
+			month=foot.month_year_text().getText();
+		}
 		
-		    	 
-		driver.findElement(By.xpath("//th[@class='picker-switch']")).getText();
+		foot.date_WebElments();
 		
-	
-	
-	List <WebElement> date=driver.findElements(By.xpath("//td[@class='day']"));
-	
-	System.out.println(date.size());
-	System.out.println(date);
-	for (WebElement k:date) {
-	 
-      while ( k.getText().equals("22")){
-       k.click();
-         break;
-       }
-	}
-	}
-	*/
-	
-	                        
-	List<WebElement> radiobtns=driver.findElements(By.xpath("//input[@type='radio']"));
-	
-	for (int i=0; i<radiobtns.size(); i++) {
+		try {
+		for (WebElement k:foot.date_WebElments()) {
+		 
+	      while (k.getText().equals(Constant.select_date)){
+	      
+	    	  k.click();
+	           break;
+	            }
+	       }
+		}catch(StaleElementReferenceException e) {
+			
+			System.out.println("stale element exception");
+	          }
+  
+	//List<WebElement> radiobtns=driver.findElements(By.xpath("//input[@type='radio']"));
+	foot.radio_buttons();
+	for (int i=0; i<foot.radio_buttons().size(); i++) {
 		
-		radiobtns.get(2).click();
-	  
-	
-	}
+		foot.radio_buttons().get(2).click();
+	  }
 	 
 	 foot.yesChekbox().click();
 	 
@@ -89,9 +87,7 @@ public class Footer_testcasses extends Baseclass{
 	 
 	 foot.Clickon_Submit_btn().click();
 	 
-	 
 	foot.ClicksiteMap().click();
-	
 	
 //Extras
 	foot.Clickon_Brands().click();
@@ -102,7 +98,6 @@ public class Footer_testcasses extends Baseclass{
 	
 	foot.Click_on_Specials().click();
 	
-	
 //My accounts	
 	foot.Click_on_Accounts().click();
 	
@@ -112,10 +107,4 @@ public class Footer_testcasses extends Baseclass{
 	
 	foot.Click_on_Newsetter().click();
 	
-	
-	
-	
-	
-	
-
 	}}

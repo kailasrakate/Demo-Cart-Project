@@ -42,11 +42,11 @@ public class AddToCartTestCases extends Baseclass {
 		
 		add.addtocartiphone().click(); //click on add to cart iphone
 		 
-		add.searchbar().clear();  //search bar clear kela
+		add.searchbar().clear();  //for clear Searchbar
 		
 		add.searchbar().sendKeys(Constant.samsung); //type samsung in search bar
 		 
-		add.clickonSearchbutton().click(); //search button var click
+		add.clickonSearchbutton().click(); //click on search button 
 		
 		System.out.println(Constant.samsung_price);
 		System.out.println(add.Samsungtabprice().getText());

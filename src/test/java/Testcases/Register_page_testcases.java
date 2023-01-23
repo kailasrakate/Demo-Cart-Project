@@ -31,9 +31,9 @@ public class Register_page_testcases extends Baseclass {
 		
 		reg.ConfirmPassword().sendKeys(Constant.password);
 		
-		reg.SubscribeYes().click(); //subcribe option select yes
+		reg.SubscribeYes().click(); //subscribe option select yes
 		
-		reg.privecypolicy().click();// privecypolicy checkbox select
+		reg.privecypolicy().click();// privacy policy check-box select
 		
 		
 		
